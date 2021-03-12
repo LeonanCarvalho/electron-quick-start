@@ -1,4 +1,10 @@
 const {parentPort, workerData, isMainThread} = require('worker_threads');
+
+const dummy = require('../dummy');
+
+
+dummy('Dummy Loaded');
+
 if (!isMainThread) {
 
     const fs = require('fs')
