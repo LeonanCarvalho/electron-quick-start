@@ -28,6 +28,9 @@ function getWorker(taskName, workerData){
     }
 }
 
+/**
+* Convert a js file into a string to be evaluated.
+**/
 function shadowWorker(taskName,workerData){
     let data;
     if(Cache[taskName]){
